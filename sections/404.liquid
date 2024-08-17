@@ -1,19 +1,19 @@
 
 
-<!-- sections/404.liquid -->
-<div class="text-center py-16">
-  <h1 class="text-4xl font-bold mb-4">{{ section.settings.heading }}</h1>
-  <p class="text-lg text-gray-600 mb-6">{{ section.settings.subheading }}</p>
-
-  {% if section.settings.show_search %}
-    <form action="/search" method="get" class="mb-6">
-      <input type="search" name="q" placeholder="Search our store" class="border p-2 w-full max-w-md mx-auto">
-    </form>
-  {% endif %}
-
-  {% if section.settings.show_button %}
-    <a href="{{ section.settings.button_link }}" class="inline-block bg-blue-500 text-white py-2 px-4 rounded">
-      {{ section.settings.button_text }}
-    </a>
-  {% endif %}
-</div>
+{% layout none %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 flex items-center justify-center h-screen">
+  <div class="text-center">
+    <h1 class="text-6xl font-bold text-red-500">404</h1>
+    <p class="text-xl mt-4">Oops! The page you're looking for can't be found.</p>
+    <a href="/" class="mt-6 inline-block px-5 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-300">Go Home</a>
+  </div>
+</body>
+</html>
